@@ -21,4 +21,5 @@ dependencies:
   - setuptools_scm
   - statsmodels
   - toml
-  - pip: [-e ., kaleido, pdbp]
+  - matplotlib # added matplotlib
+  - pip: [-e ., kaleido, pdbp, tensorflow] # added tensorflow
