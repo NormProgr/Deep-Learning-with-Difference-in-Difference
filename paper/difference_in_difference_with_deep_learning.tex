@@ -1,4 +1,4 @@
-\documentclass[11pt, a4paper, leqno]{article}
+\documentclass[12pt, a4paper, leqno]{article} %switched to 12pt according to Uni Bonn regulation
 \usepackage{a4wide}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
@@ -19,6 +19,13 @@
 % \usepackage{pdf14} % Enable for Manuscriptcentral -- can't handle pdf 1.5
 % \usepackage{endfloat} % Enable to move tables / figures to the end. Useful for some
 % submissions.
+
+
+\usepackage{geometry}
+\geometry{top=2cm, bottom=2cm, right=2cm, left=3cm} %according to Uni Bonn regulation
+
+
+
 
 \usepackage[
     natbib=true,
@@ -49,68 +56,37 @@
 }
 
 
+
 \widowpenalty=10000
 \clubpenalty=10000
 
 \setlength{\parskip}{1ex}
 \setlength{\parindent}{0ex}
-\setstretch{1.5}
-
+\setstretch{1.5} % 1.5 line space is the standard at the University of Bonn
 
 \begin{document}
 
-\title{Difference-in-Difference with Deep Learning\thanks{Norman Metzinger, University of Bonn. Email: \href{mailto:norman.metzinger@gmx.de}{\nolinkurl{norman [dot] metzinger [at] gmx [dot] de}}.}}
 
-\author{Norman Metzinger}
-
-\date{
-    {\bf Preliminary -- please do not quote}
-    \\[1ex]
-    \today
-}
-
-\maketitle
-
-
-\begin{abstract}
-    Some abstract here.
-\end{abstract}
-
+\include{./Title}
+\tableofcontents
+\thispagestyle{empty}
+\newpage
+\setcounter{page}{1}
 \clearpage
 
 
-\section{Introduction} % (fold)
-\label{sec:introduction}
 
-If you are using this template, please cite this item from the references:
-\citet{GaudeckerEconProjectTemplates}.
-
-The data set for the example project is taken from
-\url{https://www.stem.org.uk/resources/elibrary/resource/28452/large-datasets-stats4schools}.
-It contains data on smoking habits in the UK, with 1691 observations and 12 variables.
-We consider only 4 of the 12 features for the prediction of the variable
-\texttt{smoking}: \texttt{marital\_status}, \texttt{highest\_qualification},
-\texttt{gender} and \texttt{age}. We model the dependence using a Logistic model. All
-numerical features are included linearly, while categorical features are expanded into
-dummy variables. Figures below illustrate the model predictions over the lifetime. You
-will find one figure and one estimation summary table for each installed programming
-language.
+\include{./Intro} % (fold)
 
 
 
+\pagenumbering{Roman}
 
-
-
-% section introduction (end)
-
-
-
-\setstretch{1}
 \printbibliography
-\setstretch{1.5}
 
 
-% \appendix
+
+\appendix
 
 % The chngctr package is needed for the following lines.
 % \counterwithin{table}{section}

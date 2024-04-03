@@ -22,4 +22,4 @@ dependencies:
   - statsmodels
   - toml
   - matplotlib  # added matplotlib
-  - pip: [-e ., kaleido, pdbp, tensorflow]  # added tensorflow for CPU
+  - pip: [-e ., kaleido, pdbp, tensorflow, absl-py]  # added tensorflow for CPU  # absl-py may not be relevant

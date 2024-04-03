@@ -21,7 +21,7 @@ To build the project, type
 $ pytask
 ```
 
-To check code quality,type
+To check code quality, type
 
 ```console
 $ pre-commit install
