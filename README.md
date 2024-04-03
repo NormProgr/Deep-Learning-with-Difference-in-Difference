@@ -11,7 +11,7 @@
 To get started, create and activate the environment with
 
 ```console
-$ conda/mamba env create
+$ conda env create -f environment.yml
 $ conda activate dl
 ```
 
@@ -19,6 +19,12 @@ To build the project, type
 
 ```console
 $ pytask
+```
+
+To check code quality,type
+
+```console
+$ pre-commit install
 ```
 
 ## Credits
