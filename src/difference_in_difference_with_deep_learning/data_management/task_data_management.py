@@ -4,6 +4,7 @@ from pathlib import Path
 from typing import Annotated
 
 import pandas as pd
+import yaml
 from pytask import Product
 
 from difference_in_difference_with_deep_learning.config import BLD, SRC
@@ -19,5 +20,6 @@ def task_clean_data(
     / "cleaned_data.csv",
 ) -> None:
     data = pd.read_csv(testdata)
-    data = clean_data(data)
+    data_info = yaml.safe_load(open(data_info))
+    data = clean_data(data, data_info)
     data.to_csv(cleaned_data, index=False)

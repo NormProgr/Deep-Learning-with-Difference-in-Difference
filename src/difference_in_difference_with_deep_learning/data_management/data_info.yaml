@@ -3,6 +3,4 @@ data_name: test_data.csv
 columns_to_drop: null
 categorical_columns: [Individual, FQ, Reform]
 column_rename_mapping: null
-  # highest_qualification: qualification
-outcome: FQReform  # created during the clean_data step
-# outcome_numerical: smoke_numerical
+outcome: interaction  # created during the clean_data step

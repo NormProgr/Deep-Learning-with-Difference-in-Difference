@@ -1,7 +1,7 @@
 """Function(s) for cleaning the data set(s)."""
 
 
-def clean_data(data):
+def clean_data(data, data_info):
     """Clean the data set(s).
 
     Args:
@@ -11,7 +11,7 @@ def clean_data(data):
         pd.DataFrame: The cleaned data set(s).
 
     """
-    return data
+    return _create_interaction_terms(data, data_info)
 
 
 def _create_interaction_terms(data, data_info):
@@ -24,4 +24,7 @@ def _create_interaction_terms(data, data_info):
         pd.DataFrame: The data set(s) with the interaction terms.
 
     """
+    data_select_1 = data[data_info["categorical_columns"][1]]
+    data_select_2 = data[data_info["categorical_columns"][2]]
+    data.loc[:, "interaction"] = data_select_1 * data_select_2
     return data
