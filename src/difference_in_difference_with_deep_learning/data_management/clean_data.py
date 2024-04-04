@@ -12,3 +12,16 @@ def clean_data(data):
 
     """
     return data
+
+
+def _create_interaction_terms(data, data_info):
+    """Create interaction terms for the data set(s).
+
+    Args:
+        data (pd.DataFrame): The data set(s) to create interaction terms for.
+
+    Returns:
+        pd.DataFrame: The data set(s) with the interaction terms.
+
+    """
+    return data
