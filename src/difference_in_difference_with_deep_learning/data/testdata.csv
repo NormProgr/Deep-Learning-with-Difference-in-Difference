@@ -1,4 +1,4 @@
-Individual,time,Wage(yearly),FQ,Reform,Age,WagePartner
+Individual,time,wage_year,FQ,Reform,Age,WagePartner
 1,t-2,20000,1,0,30,0
 1,t-1,23000,1,0,31,0
 1,t+1,25000,1,0,32,0
