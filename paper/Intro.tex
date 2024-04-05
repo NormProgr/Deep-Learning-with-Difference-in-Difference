@@ -13,3 +13,45 @@ numerical features are included linearly, while categorical features are expande
 dummy variables. Figures below illustrate the model predictions over the lifetime. You
 will find one figure and one estimation summary table for each installed programming
 language.
+
+\begin{center}
+    \begin{tabular}{lclc}
+    \toprule
+    \textbf{Dep. Variable:}    &    wage\_year    & \textbf{  R-squared:         } &    0.874  \\
+    \textbf{Model:}            &       OLS        & \textbf{  Adj. R-squared:    } &    0.833  \\
+    \textbf{Method:}           &  Least Squares   & \textbf{  F-statistic:       } &    20.89  \\
+    \textbf{Date:}             & Fri, 05 Apr 2024 & \textbf{  Prob (F-statistic):} & 3.36e-07  \\
+    \textbf{Time:}             &     13:28:40     & \textbf{  Log-Likelihood:    } &  -267.54  \\
+    \textbf{No. Observations:} &          25      & \textbf{  AIC:               } &    549.1  \\
+    \textbf{Df Residuals:}     &          18      & \textbf{  BIC:               } &    557.6  \\
+    \textbf{Df Model:}         &           6      & \textbf{                     } &           \\
+    \textbf{Covariance Type:}  &    nonrobust     & \textbf{                     } &           \\
+    \bottomrule
+    \end{tabular}
+    %\caption{OLS Regression Results}
+    \end{center}
+    \begin{center}
+    \begin{tabular}{lcccccc}
+    \toprule
+                         & \textbf{coef} & \textbf{std err} & \textbf{t} & \textbf{P$> |$t$|$} & \textbf{[0.025} & \textbf{0.975]}  \\
+    \midrule
+    \textbf{Intercept}   &   -3.408e+04  &     1.17e+05     &    -0.291  &         0.774        &     -2.8e+05    &     2.12e+05     \\
+    \textbf{interaction} &   -2.001e+05  &     1.75e+05     &    -1.144  &         0.268        &    -5.68e+05    &     1.67e+05     \\
+    \textbf{Individual}  &    1.949e+04  &     6412.919     &     3.039  &         0.007        &     6015.082    &      3.3e+04     \\
+    \textbf{FQ}          &   -9.482e+04  &     1.02e+05     &    -0.932  &         0.364        &    -3.09e+05    &     1.19e+05     \\
+    \textbf{Reform}      &    1.808e+05  &     1.73e+05     &     1.046  &         0.309        &    -1.82e+05    &     5.44e+05     \\
+    \textbf{Age}         &    4075.2500  &     2003.059     &     2.035  &         0.057        &     -133.021    &     8283.521     \\
+    \textbf{WagePartner} &      -4.9752  &        4.479     &    -1.111  &         0.281        &      -14.385    &        4.435     \\
+    \bottomrule
+    \end{tabular}
+    \end{center}
+    \begin{center}
+    \begin{tabular}{lclc}
+    \toprule
+    \textbf{Omnibus:}       & 17.019 & \textbf{  Durbin-Watson:     } &    2.049  \\
+    \textbf{Prob(Omnibus):} &  0.000 & \textbf{  Jarque-Bera (JB):  } &   19.105  \\
+    \textbf{Skew:}          & -1.605 & \textbf{  Prob(JB):          } & 7.10e-05  \\
+    \textbf{Kurtosis:}      &  5.835 & \textbf{  Cond. No.          } & 3.19e+06  \\
+    \bottomrule
+    \end{tabular}
+    \end{center}
