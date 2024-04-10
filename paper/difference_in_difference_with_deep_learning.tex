@@ -41,7 +41,7 @@
 \AtBeginDocument{\toggletrue{blx@useprefix}}
 \AtBeginBibliography{\togglefalse{blx@useprefix}}
 \setlength{\bibitemsep}{1.5ex}
-\addbibresource{refs.bib}
+\addbibresource{zotero_refs.bib}
 
 \usepackage[unicode=true]{hyperref}
 \hypersetup{
@@ -84,9 +84,11 @@
 \input{./conclusion}
 
 
+\addcontentsline{toc}{section}{References}
+
 
 \pagenumbering{Roman}
-
+\input{./appendix}
 \printbibliography
 
 
