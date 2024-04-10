@@ -2,7 +2,9 @@
 data_name: test_data.csv
 columns_to_drop: null
 causal_effect: interaction
-categorical_columns: [Individual, FQ, Reform]
+categorical_columns: [FQ, Reform]
+control_columns: [Age, WagePartner]
 column_rename_mapping: null
+ID: individual
 time: time
 outcome: wage_year  # created during the clean_data step

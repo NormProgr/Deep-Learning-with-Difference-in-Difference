@@ -24,7 +24,7 @@ def _create_interaction_terms(data, data_info):
         pd.DataFrame: The data set(s) with the interaction terms.
 
     """
-    data_select_1 = data[data_info["categorical_columns"][1]]
-    data_select_2 = data[data_info["categorical_columns"][2]]
+    data_select_1 = data[data_info["categorical_columns"][0]]
+    data_select_2 = data[data_info["categorical_columns"][1]]
     data.loc[:, "interaction"] = data_select_1 * data_select_2
     return data
