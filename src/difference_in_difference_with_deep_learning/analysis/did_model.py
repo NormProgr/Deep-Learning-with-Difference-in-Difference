@@ -18,4 +18,4 @@ def did_regression(data, data_info):
     results = reg_model.fit()
 
     # Return the summary of the regression results
-    return results.summary()
+    return results.summary2()
