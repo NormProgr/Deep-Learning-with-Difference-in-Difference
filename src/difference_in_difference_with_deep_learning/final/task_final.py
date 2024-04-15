@@ -4,7 +4,6 @@ from pathlib import Path
 from typing import Annotated
 
 import pandas as pd
-import pytask
 from pytask import Product
 
 from difference_in_difference_with_deep_learning.config import BLD
@@ -13,21 +12,20 @@ from difference_in_difference_with_deep_learning.final.did_simple_results import
 )
 
 
-@pytask.mark.depends_on(
-    {
-        "did_regression_output": BLD
-        / "difference_in_difference_with_deep_learning"
-        / "models"
-        / "did_model_output.pkl",
-    },
-)
-@pytask.mark.task
-@pytask.mark.produces(BLD / "python" / "tables" / "did_simple_reg_output.tex")
-def task_create_results_table_simple_did(depends_on, produces):
+def task_create_results_table_simple_did(
+    did_regression_output: Path = BLD
+    / "difference_in_difference_with_deep_learning"
+    / "models"
+    / "did_model_output.pkl",
+    reg_output: Annotated[Path, Product] = BLD
+    / "python"
+    / "tables"
+    / "did_simple_reg_output.tex",
+) -> None:
     """Store a table in LaTeX format with the estimation results (Python version)."""
-    model_results = pd.read_pickle(depends_on["did_regression_output"])
+    model_results = pd.read_pickle(did_regression_output)
     model = generate_regression_table(model_results)
-    with open(produces, "w") as fh:
+    with open(reg_output, "w") as fh:
         fh.write(model.as_latex())
 
 
