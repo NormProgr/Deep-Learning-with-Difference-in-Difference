@@ -20,6 +20,7 @@ dependencies:
   - pyyaml
   - setuptools_scm
   - statsmodels
+  - scikit-learn
   - toml
   - matplotlib  # added matplotlib
-  - pip: [-e ., kaleido, pdbp, tensorflow, absl-py]  # added tensorflow for CPU  # absl-py may not be relevant
+  - pip: [-e ., kaleido, pdbp, tensorflow, absl-py, scikit-learn]  # added tensorflow for CPU  # absl-py may not be relevant
