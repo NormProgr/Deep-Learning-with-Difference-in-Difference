@@ -22,5 +22,6 @@ dependencies:
   - statsmodels
   - scikit-learn
   - toml
+  - seaborn
   - matplotlib  # added matplotlib
   - pip: [-e ., kaleido, pdbp, tensorflow, absl-py, scikit-learn]  # added tensorflow for CPU  # absl-py may not be relevant
