@@ -1,12 +1,14 @@
 \contentsline {section}{\numberline {1}Introduction}{1}{section.1}%
 \contentsline {section}{\numberline {2}Literature Review}{1}{section.2}%
-\contentsline {section}{\numberline {3}Theoretical Background of Deep Neural Networks}{3}{section.3}%
-\contentsline {section}{\numberline {4}Application}{3}{section.4}%
+\contentsline {section}{\numberline {3}Theoretical Background}{3}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Difference-in-Differences}{3}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Deep Neural Networks}{3}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Monte Carlo Simulation Study}{3}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Data}{3}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}Difference-in-Differences Estimation}{3}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Semiparametric Estimation}{I}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}Small Sample Comparison}{I}{subsection.4.4}%
-\contentsline {section}{\numberline {5}Discussion}{I}{section.5}%
+\contentsline {subsection}{\numberline {4.3}(Double Robust DiD Estimation)}{I}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Semiparametric Estimation}{I}{subsection.4.4}%
+\contentsline {section}{\numberline {5}Application}{I}{section.5}%
 \contentsline {section}{\numberline {6}Conclusion}{I}{section.6}%
 \contentsline {section}{References}{I}{section.6}%
 \contentsline {section}{Appendix}{I}{section*.4}%
