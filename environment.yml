@@ -24,4 +24,5 @@ dependencies:
   - toml
   - seaborn
   - matplotlib  # added matplotlib
+  - doubleml
   - pip: [-e ., kaleido, pdbp, tensorflow, absl-py, scikit-learn]  # added tensorflow for CPU  # absl-py may not be relevant
